@@ -54,21 +54,16 @@ Out of scope for this implementation:
 
 ## How to Run the Project
 
-Create and activate a virtual environment (optional but recommended):
-
-python -m venv venv
-
-source venv/bin/activate  # Linux/macOS
-
-venv\Scripts\activate     # Windows
+Create and activate a virtual environment:
+- python -m venv venv
+- source venv/bin/activate  # Linux/macOS
+- venv\Scripts\activate     # Windows
 
 Install dependencies:
-
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 Run the API:
-
-uvicorn main:app --reload
+- uvicorn main:app --reload
 
 The service will be available at http://localhost:8000
 
@@ -94,6 +89,13 @@ curl "http://localhost:8000/urlinfo/1/example.com/%2Fhome"
 Blocked URL:
 
 curl "http://localhost:8000/urlinfo/1/malware.test/%2Fbad%2Fpath"
+
+## Visuals
+
+<img width="1424" height="197" alt="Captura de pantalla 2026-01-19 132243" src="https://github.com/user-attachments/assets/a38f3bf1-5098-4e0c-8b79-79635eb79a43" />
+
+
+<img width="699" height="167" alt="Captura de pantalla 2026-01-19 131443" src="https://github.com/user-attachments/assets/ba9f0a77-389f-43e7-bb54-821a8af767fe" />
 
 
 ## Part 2 – Design Considerations (Written Answers)
